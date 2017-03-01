@@ -1,0 +1,11 @@
+#!/bin/sh
+WEBSITE_FOLDER="$HOME/public_html/"
+for e in $(ls); do
+        if [ $e = ".git" ]; then
+                echo 'Not copying git folder'
+        else
+               # echo $e "${WEBSITE_FOLDER}"
+                cp -r $e "${WEBSITE_FOLDER}"
+        fi
+done
+exit 0
