@@ -16,6 +16,18 @@
                         border-width: 0px 0px 1px 6px;
                         border-color: grey grey grey yellow;
                 }
+                li.my-workshop {
+                        border-style: none none solid solid;
+                        border-width: 0px 0px 1px 6px;
+                        border-color: grey grey grey green;
+                }
+                div.list-image-container {
+                  padding-top: 0px;
+                  padding-bottom: 0px;
+                  padding-left: 2px;
+                  padding-right: 2px;
+                  width: 80px;
+                }
                 html, body {
                         font-size: 14px;
                 }
@@ -36,7 +48,7 @@
     <!-- <a href="#cv">CV</a> -->
     <a href="#contact">Contact</a>
   </div>
-             
+
   <div class="w3-tab">
   <!-- ABOUT ME -->
   <div id="aboutMe" class="w3-container">
@@ -45,12 +57,12 @@
              <img src="images/joshua.jpg" alt="A picture of me" style="width:100%" >
      </div>
      <p> I'm a Ph.D. candidate at the Robotics, Perception and Learning Lab, Royal Institute of Technology (KTH), Stockholm.
-        My supervisors are Danica Kragic Jensfelt and Christian Smith.
-        My research interests lie within the field of manipulation planning for autonomous robots, in particular in 
+        My supervisors are Danica Kragic Jensfelt and Johannes A. Stork.
+        My research interests lie within the field of manipulation planning for autonomous robots, in particular in
         precision grasp and rearrangement planning. </p>
 
-    
-      <p>I received both my Bachelor's and my Master's degree in Computer Science from 
+
+      <p>I received both my Bachelor's and my Master's degree in Computer Science from
       Karlsruhe Institute of Technology (KIT), Germany, in 2011 and 2014 respectively.
       During my studies I worked at Tamim Asfour's High Performance Humanoid Technologies (H&sup2T) Lab at KIT.
       For my master's thesis I visited Siddhartha Srinivasa's Personal Robotics Lab at Carnegie Mellon University (CMU) in
@@ -62,79 +74,156 @@
     <h3 style="font-weight: bold">Publications</h3>
     <div class="w3-panel w3-blue-grey w3-padding-8 w3-row w3-round-xlarge">
             <span class="w3-col w3-leftbar w3-border-blue" style="padding-left:4px;width:23%" > Conference paper</span>
-            <span class="w3-col w3-leftbar w3-border-yellow" style="padding-left:4px;width:23%"> Journal paper</span>
+            <span class="w3-col w3-leftbar w3-border-green" style="padding-left:4px;width:23%"> Workshop/Arxiv </span>
+            <!-- <span class="w3-col w3-leftbar w3-border-yellow" style="padding-left:4px;width:23%"> Journal paper</span> -->
             <span class="w3-col w3-container" style="width:18%"><i class="fa fa-file-pdf-o"></i> PDF</span>
             <span class="w3-col w3-container" style="width:18%"><i class="fa fa-file-video-o"></i> Video</span>
             <span class="w3-col w3-container" style="width:18%"><i class="fa fa-link"></i> Website </span>
     </div>
     <ul class="w3-ul w3-border">
-            <li class="w3-hover-blue-grey my-journal">
-                            <img src="images/publications/tro2018Title.svg" class="w3-left" style="width:60px;margin:0px 10px 0px 0px;padding-top:10px">
-                            <a href="pdfs/haustein2018.pdf">
-                                <span style="font-weight: bold">Learning Manipulation States and Actions for Efficient Non-prehensile Rearrangement Planning</span>
-                                <i class="fa fa-file-pdf-o"></i>
-                            </a>
-                            <a href="https://joshuahaustein.github.io/learning_rearrangement_planning/"><i class="fa fa-link"></i></a>
-                            <br>
-                            <span class="w3-opacity">J. A. Haustein, I. Arnekvist, J. A. Stork, K. Hang, D. Kragic</span><br>
-                            <span class="w3-opacity"> in submission, 2018</span>
-            </li>
-            <li class="w3-hover-blue-grey my-conference">
-                            <img src="images/publications/humanoids2017Title.png" class="w3-left" style="width:60px;margin:0px 10px 0px 0px;padding-top:10px">
-                            <a href="pdfs/kokic2017.pdf">
-                                    <span style="font-weight: bold">Affordance Detection for Task-specific Grasping using Deep Learning</span>
-                            <i class="fa fa-file-pdf-o"></i>
-                            </a>
-                            <br>
-                            <span class="w3-opacity"> M. Kokic, J. A. Stork, J. A. Haustein, D. Kragic </span><br>
-                            <span class="w3-opacity"> in Humanoid Robotics (Humanoids) 2017</span>
-            </li>
-            <li class="w3-hover-blue-grey my-conference">
-                            <img src="images/publications/icra2017Title.png" class="w3-left" style="width:60px;margin:0px 10px 0px 0px">
-                            <a href="pdfs/haustein2017.pdf">
-                                    <span style="font-weight: bold">Integrating Motion and Hierarchical Fingertip Grasp Planning</span>
-                            <i class="fa fa-file-pdf-o"></i>
-                            </a>
-                            <a href="videos/ICRA2017.mp4"><i class="fa fa-file-video-o"></i></a>
-                            <br>
-                            <span class="w3-opacity"> J. A. Haustein, K. Hang, D. Kragic </span><br>
-                            <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2017</span>
-            </li>
-            <li class="w3-hover-blue-grey my-conference">
-                    <img src="images/publications/icra2016Title.png" class="w3-left" style="width:60px;margin:15px 10px 0px 0px">
-                    <a href="http://www.csc.kth.se/~kaiyuh/pdfs/hang2016a.pdf"><span style="font-weight: bold">On the Evolution of Fingertip Grasping Manifolds</span>
-                    <i class="fa fa-file-pdf-o"></i></a>
-                    <a href="videos/ICRA2016.mp4"><i class="fa fa-file-video-o"></i></a>
-                    <br>
-                    <span class="w3-opacity"> K. Hang, J. A. Haustein, M. Li, A. Billard, C. Smith and D. Kragic </span><br>
-                    <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2016</span>
-            </li>
-            <li class="w3-hover-blue-grey my-conference">
-                            <img src="images/publications/icra2015_2Title.png" class="w3-left" style="width:60px;margin:10px 10px 10px 0px">
-                            <a href="http://ri.cmu.edu/pub_files/2015/5/ICRA15_1883_FI.pdf">
-                                    <span style="font-weight: bold">Kinodynamic Randomized Rearrangement Planning via Dynamic Transitions Between Statically Stable States</span>
-                                    <i class="fa fa-file-pdf-o"></i>
-                            </a>
-                            <a href="videos/ICRA2015_2.mp4"><i class="fa fa-file-video-o"></i></a>
-                            <br>
-                            <span class="w3-opacity"> J. A. Haustein, J. King, S. S. Srinivasa, T. Asfour</span><br>
-                            <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2015</span>
-            </li>
-            <li class="w3-hover-blue-grey my-conference">
-                    <img src="images/publications/icra2015_1Title.png" class="w3-left" style="width:60px;margin:10px 10px 0px 0px">
-                    <a href="http://ri.cmu.edu/pub_files/2015/5/ICRA15_1356_FI.pdf">
-                        <span style="font-weight: bold">Nonprehensile Whole Arm Rearrangement Planning on Physics Manifolds</span>
-                        <i class="fa fa-file-pdf-o"></i>
-                    </a>
-                    <a href="videos/ICRA2015_1.mp4"><i class="fa fa-file-video-o"></i></a>
-                    <br>
-                    <span class="w3-opacity"> J. King, J. A.Haustein, S. S. Srinivasa, T. Asfour </span><br>
-                    <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2015</span>
-            </li>
-
+      <li class="w3-row w3-hover-blue-grey my-conference">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/sortingTitle.png" style="width:100%;">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="pdfs/song2020.pdf">
+            <span style="font-weight: bold">Multi-Object Rearrangement with Monte Carlo Tree Search: A Case Study on Planar Nonprehensile Sorting</span>
+            <i class="fa fa-file-pdf-o"></i>
+          </a>
+          <a href="videos/sorting.mp4"><i class="fa fa-file-video-o"></i></a>
+          <br>
+          <span class="w3-opacity">H. Song, J. A. Haustein, W. Yuan, K. Hang, M. Yu Wang, D. Kragic, J. A. Stork</span><br>
+          <span class="w3-opacity">in submission</span>
+        </div>
+      </li>
+      <li class="w3-row w3-hover-blue-grey my-conference">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/humanoids2019Title.png" style="width:100%;">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="pdfs/haustein2019b.pdf">
+            <span style="font-weight: bold">Placing Objects with Prior In-hand Manipulation using Dexterous Manipulation Graphs</span>
+            <i class="fa fa-file-pdf-o"></i>
+          </a>
+          <a href="https://joshuahaustein.github.io/plcmnt-web/"><i class="fa fa-link"></i></a>
+          <br>
+          <span class="w3-opacity">J. A. Haustein, S. Cruciani, R. Asif, K. Hang, D. Kragic</span><br>
+          <span class="w3-opacity">in Humanoid Robotics (Humanoids) 2019</span>
+        </div>
+      </li>
+      <li class="w3-row w3-hover-blue-grey my-conference">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/iros2019Title.png" style="width:100%;">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="pdfs/haustein2019a.pdf">
+            <span style="font-weight: bold">Object Placement Planning and Optimization for Robot Manipulators</span>
+            <i class="fa fa-file-pdf-o"></i>
+          </a>
+          <a href="videos/IROS2019.mp4"><i class="fa fa-file-video-o"></i></a>
+          <a href="https://joshuahaustein.github.io/plcmnt-web/"><i class="fa fa-link"></i></a>
+          <br>
+          <span class="w3-opacity">J. A. Haustein, K. Hang, J. A. Stork, D. Kragic</span><br>
+          <span class="w3-opacity">in International Conference on Intelligent Robots and Systems (IROS) 2019</span>
+        </div>
+      </li>
+      <li class="w3-row w3-hover-blue-grey my-workshop">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/tro2018Title.svg" style="width:100%;">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="pdfs/haustein2018_workshop.pdf">
+              <span style="font-weight: bold">Non-prehensile Rearrangement Planning with Learned Manipulation States and Actions</span>
+              <i class="fa fa-file-pdf-o"></i>
+          </a>
+          <a href="https://joshuahaustein.github.io/learning_rearrangement_planning/"><i class="fa fa-link"></i></a>
+          <br>
+          <span class="w3-opacity">J. A. Haustein, I. Arnekvist, J. A. Stork, K. Hang, D. Kragic</span><br>
+          <span class="w3-opacity">in Workshop "Machine Learning in Robot Motion Planning" </span><br>
+          <span class="w3-opacity">at International Conference on Intelligent Robots and Systems (IROS) 2018</span><br>
+          <span class="w3-opacity" style="font-weight: bold">Extended manuscript:</span><br>
+          <a href="pdfs/haustein2018.pdf">
+              <span class="w3-opacity">Leaning Manipulation States and Actions for Efficient Non-prehensile Rearrangement Planning</span>
+              <i class="fa fa-file-pdf-o"></i>
+          </a>
+        </div>
+      </li>
+      <li class="w3-row w3-hover-blue-grey my-conference">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/humanoids2017Title.png" style="width:100%;">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="pdfs/kokic2017.pdf">
+            <span style="font-weight: bold">Affordance Detection for Task-specific Grasping using Deep Learning</span>
+            <i class="fa fa-file-pdf-o"></i>
+          </a>
+          <br>
+          <span class="w3-opacity"> M. Kokic, J. A. Stork, J. A. Haustein, D. Kragic </span><br>
+          <span class="w3-opacity"> in Humanoid Robotics (Humanoids) 2017</span>
+        </div>
+      </li>
+      <li class="w3-row w3-hover-blue-grey my-conference">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/icra2017Title.png" style="width:100%;">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="pdfs/haustein2017.pdf">
+            <span style="font-weight: bold">Integrating Motion and Hierarchical Fingertip Grasp Planning</span>
+            <i class="fa fa-file-pdf-o"></i>
+          </a>
+          <a href="videos/ICRA2017.mp4"><i class="fa fa-file-video-o"></i></a>
+          <br>
+          <span class="w3-opacity"> J. A. Haustein, K. Hang, D. Kragic </span><br>
+          <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2017</span>
+        </div>
+      </li>
+      <li class="w3-row w3-hover-blue-grey my-conference">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/icra2016Title.png" style="width:100%">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="http://www.csc.kth.se/~kaiyuh/pdfs/hang2016a.pdf"><span style="font-weight: bold">On the Evolution of Fingertip Grasping Manifolds</span>
+          <i class="fa fa-file-pdf-o"></i></a>
+          <a href="videos/ICRA2016.mp4"><i class="fa fa-file-video-o"></i></a>
+          <br>
+          <span class="w3-opacity"> K. Hang, J. A. Haustein, M. Li, A. Billard, C. Smith and D. Kragic </span><br>
+          <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2016</span>
+        </div>
+      </li>
+      <li class="w3-row w3-hover-blue-grey my-conference">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/icra2015_2Title.png" style="width:100%">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="http://ri.cmu.edu/pub_files/2015/5/ICRA15_1883_FI.pdf">
+                  <span style="font-weight: bold">Kinodynamic Randomized Rearrangement Planning via Dynamic Transitions Between Statically Stable States</span>
+                  <i class="fa fa-file-pdf-o"></i>
+          </a>
+          <a href="videos/ICRA2015_2.mp4"><i class="fa fa-file-video-o"></i></a>
+          <br>
+          <span class="w3-opacity"> J. A. Haustein, J. King, S. S. Srinivasa, T. Asfour</span><br>
+          <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2015</span>
+        </div>
+      </li>
+      <li class="w3-row w3-hover-blue-grey my-conference">
+        <div class="w3-col w3-container w3-center list-image-container">
+          <img src="images/publications/icra2015_1Title.png" style="width:100%">
+        </div>
+        <div class="w3-rest w3-container">
+          <a href="http://ri.cmu.edu/pub_files/2015/5/ICRA15_1356_FI.pdf">
+              <span style="font-weight: bold">Nonprehensile Whole Arm Rearrangement Planning on Physics Manifolds</span>
+              <i class="fa fa-file-pdf-o"></i>
+          </a>
+          <a href="videos/ICRA2015_1.mp4"><i class="fa fa-file-video-o"></i></a>
+          <br>
+          <span class="w3-opacity"> J. King, J. A.Haustein, S. S. Srinivasa, T. Asfour </span><br>
+          <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2015</span>
+        </div>
+      </li>
     </ul>
   </div>
-  
+
+
   <!-- VIDEOS -->
   <!-- <div id="videos" class="w3&#45;container"> -->
   <!--   <h3 style="font&#45;weight: bold">Videos</h3> -->
@@ -151,7 +240,7 @@
   <!--   <h2>CV</h2> -->
   <!--   <p>My CV.</p> -->
   <!-- </div> -->
-        
+
   <!-- Contact -->
   <div id="contact" class="w3-container">
     <h3 style="font-weight: bold">Contact</h3>
@@ -168,5 +257,5 @@
 </div>
 
 </body>
-</html> 
+</html>
 
