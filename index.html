@@ -31,6 +31,27 @@
                 html, body {
                         font-size: 14px;
                 }
+                video {
+                  /* override other styles to make responsive */
+                  width: 100%    !important;
+                  height: auto   !important;
+                }
+                .video-container {
+                  position: relative;
+                  padding-bottom: 56.25%;
+                  padding-top: 0;
+                  height: 0;
+                  overflow: hidden;
+                }
+                .video-container iframe,
+                .video-container object,
+                .video-container embed {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
         </style>
 </head>
 
@@ -44,7 +65,7 @@
   <div class="w3-topnav w3-black">
     <a href="#aboutMe">About Me</a>
     <a href="#publications">Publications</a>
-    <!-- <a href="#videos">Videos</a> -->
+    <a href="#videos">Project Videos</a>
     <!-- <a href="#cv">CV</a> -->
     <a href="#contact">Contact</a>
   </div>
@@ -71,7 +92,7 @@
   </div>
 
   <!-- PUBLICATIONS -->
-  <div id="publications" class="w3-container">
+  <div id="publications" class="w3-container w3-section">
     <h3 style="font-weight: bold">Publications</h3>
     <div class="w3-panel w3-blue-grey w3-padding-8 w3-row w3-round-xlarge">
             <span class="w3-col w3-leftbar w3-border-blue" style="padding-left:4px;width:23%" > Conference paper</span>
@@ -86,12 +107,12 @@
         <div class="w3-col w3-container w3-center list-image-container">
           <img src="images/publications/sortingTitle.png" style="width:100%;">
         </div>
-        <div class="w3-rest w3-container">
+        <div class="w3-rest w3-container" id="iros2020">
           <a href="pdfs/song2020.pdf">
             <span style="font-weight: bold">Multi-Object Rearrangement with Monte Carlo Tree Search: A Case Study on Planar Nonprehensile Sorting</span>
             <i class="fa fa-file-pdf-o"></i>
           </a>
-          <a href="videos/IROS2020.mp4"><i class="fa fa-file-video-o"></i></a>
+          <a href="#iros2020video"><i class="fa fa-file-video-o"></i></a>
           <a href="http://song-haoran.com/mcts-sorting/"><i class="fa fa-link"></i></a>
           <br>
           <span class="w3-opacity">H. Song, J. A. Haustein, W. Yuan, K. Hang, M. Yu Wang, D. Kragic, J. A. Stork</span><br>
@@ -122,7 +143,7 @@
             <span style="font-weight: bold">Object Placement Planning and Optimization for Robot Manipulators</span>
             <i class="fa fa-file-pdf-o"></i>
           </a>
-          <a href="videos/IROS2019.mp4"><i class="fa fa-file-video-o"></i></a>
+          <a href="#iros2019video"><i class="fa fa-file-video-o"></i></a>
           <a href="https://joshuahaustein.github.io/plcmnt-web/"><i class="fa fa-link"></i></a>
           <br>
           <span class="w3-opacity">J. A. Haustein, K. Hang, J. A. Stork, D. Kragic</span><br>
@@ -168,12 +189,12 @@
         <div class="w3-col w3-container w3-center list-image-container">
           <img src="images/publications/icra2017Title.png" style="width:100%;">
         </div>
-        <div class="w3-rest w3-container">
+        <div class="w3-rest w3-container" id="icra2017">
           <a href="pdfs/haustein2017.pdf">
             <span style="font-weight: bold">Integrating Motion and Hierarchical Fingertip Grasp Planning</span>
             <i class="fa fa-file-pdf-o"></i>
           </a>
-          <a href="videos/ICRA2017.mp4"><i class="fa fa-file-video-o"></i></a>
+          <a href="#icra2017video"><i class="fa fa-file-video-o"></i></a>
           <br>
           <span class="w3-opacity"> J. A. Haustein, K. Hang, D. Kragic </span><br>
           <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2017</span>
@@ -186,7 +207,7 @@
         <div class="w3-rest w3-container">
           <a href="http://www.csc.kth.se/~kaiyuh/pdfs/hang2016a.pdf"><span style="font-weight: bold">On the Evolution of Fingertip Grasping Manifolds</span>
           <i class="fa fa-file-pdf-o"></i></a>
-          <a href="videos/ICRA2016.mp4"><i class="fa fa-file-video-o"></i></a>
+          <a href="#icra2016video"><i class="fa fa-file-video-o"></i></a>
           <br>
           <span class="w3-opacity"> K. Hang, J. A. Haustein, M. Li, A. Billard, C. Smith and D. Kragic </span><br>
           <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2016</span>
@@ -201,7 +222,7 @@
                   <span style="font-weight: bold">Kinodynamic Randomized Rearrangement Planning via Dynamic Transitions Between Statically Stable States</span>
                   <i class="fa fa-file-pdf-o"></i>
           </a>
-          <a href="videos/ICRA2015_2.mp4"><i class="fa fa-file-video-o"></i></a>
+          <a href="#icra2015bvideo"><i class="fa fa-file-video-o"></i></a>
           <br>
           <span class="w3-opacity"> J. A. Haustein, J. King, S. S. Srinivasa, T. Asfour</span><br>
           <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2015</span>
@@ -216,7 +237,7 @@
               <span style="font-weight: bold">Nonprehensile Whole Arm Rearrangement Planning on Physics Manifolds</span>
               <i class="fa fa-file-pdf-o"></i>
           </a>
-          <a href="videos/ICRA2015_1.mp4"><i class="fa fa-file-video-o"></i></a>
+          <a href="#icra2015avideo"><i class="fa fa-file-video-o"></i></a>
           <br>
           <span class="w3-opacity"> J. King, J. A.Haustein, S. S. Srinivasa, T. Asfour </span><br>
           <span class="w3-opacity"> in International Conference in Robotics and Automation (ICRA) 2015</span>
@@ -227,15 +248,125 @@
 
 
   <!-- VIDEOS -->
-  <!-- <div id="videos" class="w3&#45;container"> -->
-  <!--   <h3 style="font&#45;weight: bold">Videos</h3> -->
-  <!--   <div class="w3&#45;center"> -->
-  <!--           <video width="640" height="360" controls> -->
-  <!--                 <source src="videos/ICRA2017.mp4" type="video/mp4"> -->
-  <!--                 Your browser does not support the video tag! -->
-  <!--           </video> -->
-  <!--  </div> -->
-  <!-- </div> -->
+  <div id="videos" class="w3&#45;container w3-section">
+    <h3 style="font&#45;weight: bold">Project Videos</h3>
+    <!-- ASP  -->
+    <div class="w3-card-2 w3-center w3-margin" id="iros2020video">
+      <div class="w3-container w3-blue-grey">
+        <h5>
+          Automated Stock Picking: Prototype development
+       </h5>
+      </div>
+      
+      <video controls>
+        <source src="videos/fact_asp_h264.mp4" type="video/mp4">
+        Your browser does not support the video tag!
+      </video>
+    </div>
+    
+    <!-- IROS 2020  -->
+    <div class="w3-card-2 w3-center w3-margin" id="iros2020video">
+      <div class="w3-container w3-blue-grey">
+        <h5>
+          <a href="pdfs/song2020.pdf">Multi-Object Rearrangement with Monte Carlo Tree Search:<br> A Case Study on Planar Nonprehensile Sorting</a>
+       </h5>
+      </div>
+      
+      <video controls>
+        <source src="videos/IROS2020.mp4" type="video/mp4">
+        Your browser does not support the video tag!
+      </video>
+    </div>
+
+    <!-- IROS 2019  -->
+    <div class="w3-card-4 w3-center w3-margin" id="iros2019video">
+      <div class="w3-container w3-blue-grey">
+        <h5>
+          <a href="pdfs/haurstein2019a.pdf">Object Placement Planning and Optimization for Robot Manipulators</a>
+        </h5>
+      </div>
+      
+      <video controls>
+        <source src="videos/IROS2019.mp4" type="video/mp4">
+        Your browser does not support the video tag!
+      </video>
+    </div>
+    <!-- ICRA 2017  -->
+    <div class="w3-card-4 w3-center w3-margin" id="icra2017video">
+      <div class="w3-container w3-blue-grey">
+        <h5>
+          <a href="pds/haustein2017.pdf">Integrating Motion and Hierarchical Fingertip Grasp Planning</a>
+        </h5>
+      </div>
+      
+      <video controls>
+        <source src="videos/ICRA2017.mp4" type="video/mp4">
+        Your browser does not support the video tag!
+      </video>
+    </div>
+
+    <!-- Amazon Picking Challenge  -->
+    <div class="w3-card-4 w3-center w3-margin" id="icra2016video">
+      <div class="w3-container w3-blue-grey">
+        <h5>
+            Team KTH @ Amazon Picking Challenge 2016 (Playlist of 5 videos)
+        </h5>
+      </div>
+      
+      <div class="video-container">
+        <!-- Test run Picking -->
+        <iframe src="https://www.youtube.com/embed/lNv1kCrQMmw?playlist=V3DrkCWKhbo,1NMyLDv1H1I,lCq_Wh310cA,aKdzsSSrljE&mute=1&rel=0" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <!-- ICRA 2016  -->
+    <div class="w3-card-4 w3-center w3-margin" id="icra2016video">
+      <div class="w3-container w3-blue-grey">
+        <h5>
+          <a href="http://www.csc.kth.se/~kaiyuh/pdfs/hang2016a.pdf">
+            On the Evolution of Fingertip Grasping Manifolds
+          </a>
+        </h5>
+      </div>
+      
+      <video controls>
+        <source src="videos/ICRA2016.mp4" type="video/mp4">
+        Your browser does not support the video tag!
+      </video>
+    </div>
+
+    <!-- ICRA 2015b  -->
+    <div class="w3-card-4 w3-center w3-margin" id="icra2015bvideo">
+      <div class="w3-container w3-blue-grey">
+        <h5>
+          <a href="http://ri.cmu.edu/pub_files/2015/5/ICRA15_1883_FI.pdf">
+            Kinodynamic Randomized Rearrangement Planning via Dynamic Transitions Between Statically Stable States 
+          </a>
+        </h5>
+      </div>
+      
+      <video controls>
+        <source src="videos/ICRA2015_2.mp4" type="video/mp4">
+        Your browser does not support the video tag!
+      </video>
+    </div>
+
+    <!-- ICRA 2015a  -->
+    <div class="w3-card-4 w3-center w3-margin" id="icra2015avideo">
+      <div class="w3-container w3-blue-grey">
+        <h5>
+          <a href="http://ri.cmu.edu/pub_files/2015/5/ICRA15_1356_FI.pdf">
+            Nonprehensile Whole Arm Rearrangement Planning on Physics Manifolds
+         </a>
+        </h5>
+      </div>
+      
+      <video controls>
+        <source src="videos/ICRA2015_1.mp4" type="video/mp4">
+        Your browser does not support the video tag!
+      </video>
+    </div>
+  </div>
 
   <!-- CV -->
   <!-- <div id="cv" class="w3&#45;container"> -->
